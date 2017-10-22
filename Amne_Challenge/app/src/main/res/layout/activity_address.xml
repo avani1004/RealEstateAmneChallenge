@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cemetery_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/layout_activity"
+            style="@style/NoteContainer">
+
+
+            <TextView
+                style="@style/NoteHeader"
+                android:text="@string/address1" />
+
+            <EditText
+                android:id="@+id/address_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_street"
+            style="@style/NoteContainer">
+
+            <TextView
+                style="@style/NoteHeader"
+                android:text="@string/address2" />
+
+            <EditText
+                android:id="@+id/address_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="false"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@android:color/white"
+            android:text="Search"
+            android:textColor="@android:color/holo_blue_light" />
+
+        <ListView
+            android:id="@+id/agency_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+    </LinearLayout>
+</RelativeLayout>
